@@ -18,7 +18,7 @@ def setup_logger(logs_dir: str, run_id: str):
     # Записує всі події у файл на диску (.log)
     fh = logging.FileHandler(log_file, encoding="utf-8")
     fh.setFormatter(fmt)
-    # Виводить ті самі повідомлення прямо тобі в термінал
+    # Виводить ті самі повідомлення прямо в термінал
     ch = logging.StreamHandler()
     ch.setFormatter(fmt)
 
