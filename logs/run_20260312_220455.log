@@ -1,0 +1,6 @@
+2026-03-12 22:04:55,821 | INFO | --- Start Run 20260312_220455 (Variant 8: Regression + Top-10 Errors) ---
+2026-03-12 22:04:55,823 | INFO | Data loaded: (1338, 7)
+2026-03-12 22:04:56,007 | INFO | Model trained successfully.
+2026-03-12 22:04:56,046 | INFO | Metrics: {'mae': 2522.787423600246, 'rmse': 4591.931852940725, 'r2': 0.864180287082288}
+2026-03-12 22:04:56,049 | INFO | Top 10 errors saved to artifacts/run_20260312_220455/reports/top_10_errors.csv
+2026-03-12 22:04:56,087 | INFO | Run finished. All artifacts are in artifacts/run_20260312_220455

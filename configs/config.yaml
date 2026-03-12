@@ -1,0 +1,25 @@
+project:
+  name: "medical_insurance_regression"
+  seed: 42
+  run_id_mode: "timestamp"
+
+data:
+  input_csv: "data/raw/insurance.csv"
+  target: "charges"
+  num_cols: ["age", "bmi", "children"]
+  cat_cols: ["sex", "smoker", "region"]
+  test_size: 0.2
+
+model:
+  task: "regression"
+  name: "rf"
+  params:
+    n_estimators: 200
+    max_depth: 10
+
+output:
+  artifacts_dir: "artifacts"
+  logs_dir: "logs"
+  save_predictions: true
+  save_model: true
+  save_report: true
