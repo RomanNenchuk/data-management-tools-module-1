@@ -2,6 +2,8 @@ from dataclasses import dataclass
 from typing import Any
 import yaml
 
+# дозволяє швидко створювати класи, основна мета яких — зберігати дані
+# автоматично генерує стандартні методи, такі як __init__(), вирази self.x = x
 @dataclass
 class Config:
     raw: dict
